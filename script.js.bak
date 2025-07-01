@@ -1,0 +1,112 @@
+// Simple and reliable image carousel
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Mobile Menu Toggle Functionality
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerLine1 = document.getElementById('hamburger-line-1');
+    const hamburgerLine2 = document.getElementById('hamburger-line-2');
+    const hamburgerLine3 = document.getElementById('hamburger-line-3');
+    
+    let isMenuOpen = false;
+    
+    // Check if all required elements exist
+    if (!mobileMenuBtn || !mobileMenu) {
+        console.error('Mobile menu elements not found!');
+        return;
+    }
+    
+    // Simple toggle function
+    function toggleMobileMenu() {
+        isMenuOpen = !isMenuOpen;
+        
+        if (isMenuOpen) {
+            // Show menu
+            mobileMenu.classList.add('active');
+            
+            // Animate hamburger to X
+            if (hamburgerLine1) hamburgerLine1.style.transform = 'rotate(45deg) translate(5px, 5px)';
+            if (hamburgerLine2) hamburgerLine2.style.opacity = '0';
+            if (hamburgerLine3) hamburgerLine3.style.transform = 'rotate(-45deg) translate(5px, -5px)';
+            
+        } else {
+            // Hide menu
+            mobileMenu.classList.remove('active');
+            
+            // Reset hamburger
+            if (hamburgerLine1) hamburgerLine1.style.transform = 'none';
+            if (hamburgerLine2) hamburgerLine2.style.opacity = '1';
+            if (hamburgerLine3) hamburgerLine3.style.transform = 'none';
+        }
+    }
+    
+    // Add click event to mobile menu button
+    mobileMenuBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleMobileMenu();
+    });
+    
+    // Close menu when clicking menu items
+    const menuItems = mobileMenu.querySelectorAll('.cursor-pointer, button');
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            if (isMenuOpen) toggleMobileMenu();
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (isMenuOpen && !mobileMenu.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
+            toggleMobileMenu();
+        }
+    });
+    
+    // Close mobile menu on window resize to desktop size
+    window.addEventListener('resize', function() {
+        if (window.innerWidth >= 1024 && isMenuOpen) {
+            toggleMobileMenu();
+        }
+    });
+    
+    // Image Carousel
+    const slides = document.querySelectorAll('.hero-slide');
+    let currentSlide = 0;
+    
+    console.log('Found slides:', slides.length);
+    
+    if (slides.length === 0) {
+        console.error('No slides found!');
+        return;
+    }
+    
+    // Show first slide immediately
+    slides[0].style.opacity = '1';
+    slides[0].classList.add('active');
+    
+    // Hide all other slides
+    for (let i = 1; i < slides.length; i++) {
+        slides[i].style.opacity = '0';
+        slides[i].classList.remove('active');
+    }
+    
+    // Function to change slides
+    function changeSlide() {
+        console.log('Changing slide from', currentSlide, 'to', (currentSlide + 1) % slides.length);
+        
+        // Hide current slide
+        slides[currentSlide].style.opacity = '0';
+        slides[currentSlide].classList.remove('active');
+        
+        // Move to next slide
+        currentSlide = (currentSlide + 1) % slides.length;
+        
+        // Show new slide
+        slides[currentSlide].style.opacity = '1';
+        slides[currentSlide].classList.add('active');
+    }
+    
+    // Start the carousel - change every 3 seconds for testing
+    setInterval(changeSlide, 3000);
+    console.log('Image carousel started - changing every 3 seconds');
+});

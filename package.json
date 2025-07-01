@@ -1,0 +1,16 @@
+{
+  "name": "vehicle-booking",
+  "version": "1.0.0",
+  "description": "this is vehicle booking website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rajiv",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "framer-motion": "^12.20.1",
+    "tailwindcss": "^4.1.11"
+  }
+}
