@@ -277,3 +277,37 @@ function initButtonEffects() {
         });
     }
 }
+
+
+// Form submission handling
+const form = document.querySelector("form");
+  const submitBtn = document.getElementById("submitBtn");
+  const inputs = form.querySelectorAll("input");
+
+  function checkInputsFilled() {
+    let allFilled = true;
+    inputs.forEach(input => {
+      if (input.value.trim() === "") {
+        allFilled = false;
+      }
+    });
+
+    // Toggle button state and style
+    if (allFilled) {
+      submitBtn.disabled = false;
+      submitBtn.classList.remove("bg-sky-400", "cursor-not-allowed");
+      submitBtn.classList.add("bg-sky-500", "hover:bg-sky-600");
+    } else {
+      submitBtn.disabled = true;
+      submitBtn.classList.add("bg-sky-400", "cursor-not-allowed");
+      submitBtn.classList.remove("bg-sky-500", "hover:bg-sky-600");
+    }
+  }
+
+  // Attach input listener to all fields
+  inputs.forEach(input => {
+    input.addEventListener("input", checkInputsFilled);
+  });
+
+  // Run check on page load (in case browser autofills)
+  window.addEventListener("DOMContentLoaded", checkInputsFilled);

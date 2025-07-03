@@ -113,24 +113,29 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="lg:hidden fixed top-[4.5rem] left-0 w-full bg-white shadow-lg border-t border-gray-200 transform z-50">
+        <div
+          id="mobile-menu"
+          class="lg:hidden fixed top-[4.5rem] left-0 w-full bg-white p-3 shadow-lg border-t border-gray-200 transform z-50">
           <div class="py-4 px-4">
-            <!-- Vehicle Types -->
-            <div class="mb-4">
-              <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Vehicle Types</h3>
-              <div class="grid grid-cols-2 gap-2">
-                <span class="block py-2 px-3 text-gray-700 hover:bg-sky-50 hover:text-sky-600 rounded-md transition-colors cursor-pointer">Bike</span>
-                <span class="block py-2 px-3 text-gray-700 hover:bg-sky-50 hover:text-sky-600 rounded-md transition-colors cursor-pointer">Car</span>
-                <span class="block py-2 px-3 text-gray-700 hover:bg-sky-50 hover:text-sky-600 rounded-md transition-colors cursor-pointer">Bus</span>
-                <span class="block py-2 px-3 text-gray-700 hover:bg-sky-50 hover:text-sky-600 rounded-md transition-colors cursor-pointer">Truck</span>
-              </div>
-            </div>
             <!-- Navigation Links -->
             <div class="space-y-2">
-              <a href="index.html" class="block py-3 px-3 text-gray-700 hover:bg-sky-50 hover:text-sky-600 rounded-md transition-colors cursor-pointer font-semibold">Home</a>
-              <a href="about.html" class="block py-3 px-3 text-gray-700 hover:bg-sky-50 hover:text-sky-600 rounded-md transition-colors cursor-pointer font-semibold">About</a>
-              <a href="contact.html" class="block py-3 px-3 bg-sky-50 text-sky-600 rounded-md transition-colors cursor-pointer font-semibold">Contact</a>
-              <button class="w-full mt-4 bg-sky-500 hover:bg-sky-600 text-white py-3 px-4 rounded transition-colors font-semibold">
+              <a
+                href="index.html"
+                class="block py-3 px-3 text-gray-700 hover:bg-sky-50 hover:text-sky-600 rounded-md transition-colors cursor-pointer font-semibold"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="block py-3 px-3 text-gray-700 hover:bg-sky-50 hover:text-sky-600 rounded-md transition-colors cursor-pointer font-semibold"
+                >About</a
+              >
+              <a
+                href="contact.html"
+                class="block py-3 px-3 bg-sky-50 text-sky-600 rounded-md transition-colors cursor-pointer font-semibold"
+                >Contact</a
+              >
+              <button
+                class="w-full mt-4 bg-sky-500 hover:bg-sky-600 text-white py-3 px-4 rounded transition-colors font-semibold">
                 Book Now
               </button>
             </div>
@@ -168,8 +173,8 @@
                 </div>
               </div>
               <h3 class="text-lg font-bold text-gray-800 mb-2">Our Location</h3>
-              <p class="text-gray-600 mb-2">123 Travel Street</p>
-              <p class="text-gray-600">Mumbai, Maharashtra 400001</p>
+              <p class="text-gray-600 mb-2">Government High School Namkom, GROUND FLOOR, RUBY DEVI, C/O -ANIL KUMAR, SADABAHAR CHOWK, Namkum, KALI MANDIR,CHAI BAGAN,</p>
+              <p class="text-gray-600">Ranchi, Jharkhand, 834010</p>
             </div>
             
             <!-- Card 2: Phone -->
@@ -182,8 +187,8 @@
                 </div>
               </div>
               <h3 class="text-lg font-bold text-gray-800 mb-2">Phone Numbers</h3>
-              <p class="text-gray-600 mb-2">Booking: +91 98765 43210</p>
-              <p class="text-gray-600">Support: +91 98765 43211</p>
+              <p class="text-gray-600 mb-2">Booking: +91 8210005242</p>
+              <p class="text-gray-600">Support: +91 8210005242</p>
             </div>
             
             <!-- Card 3: Email -->
@@ -196,8 +201,7 @@
                 </div>
               </div>
               <h3 class="text-lg font-bold text-gray-800 mb-2">Email Us</h3>
-              <p class="text-gray-600 mb-2">info@sunnytravels.com</p>
-              <p class="text-gray-600">support@sunnytravels.com</p>
+              <p class="text-gray-600 mb-2">sbhushan.ranchi82@gmail.com</p>
             </div>
           </div>
 
@@ -206,7 +210,7 @@
             <!-- Contact Form -->
             <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
               <h2 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
-              <form action="#" method="POST" class="space-y-4">
+              <form action="https://getform.io/f/aoloyejb" method="POST" class="space-y-4">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
@@ -240,7 +244,7 @@
                 </div>
 
                 <div class="pt-2">
-                  <button type="submit" class="w-full bg-sky-500 hover:bg-sky-600 text-white py-3 px-6 rounded-md transition-colors font-semibold">
+                  <button id="submitBtn" type="submit" class="w-full bg-sky-500 hover:bg-sky-600 text-white py-3 px-6 rounded-md transition-colors font-semibold">
                     Send Message
                   </button>
                 </div>
@@ -254,7 +258,7 @@
                 <h2 class="text-2xl font-bold text-gray-800 p-6 pb-4 border-b">Our Location</h2>
                 <div class="h-[300px] w-full bg-gray-200">
                   <!-- Placeholder for Google Map -->
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160289218!2d72.74109806311181!3d19.08219783958221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1656855945463!5m2!1sen!2sin" 
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.0625689939655!2d85.36773201536343!3d23.34268838477213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e0d47e726c07%3A0x5bdf2d0f1bc770cb!2sGovernment%20High%20School%20Namkom!5e0!3m2!1sen!2sin!4v1720196100000!5m2!1sen!2sin" 
                     width="100%" 
                     height="100%" 
                     style="border:0;" 
@@ -281,15 +285,11 @@
                     <span class="text-gray-600">Sunday:</span>
                     <span class="font-semibold">Closed</span>
                   </div>
-                  <div class="flex justify-between pt-2">
-                    <span class="text-gray-600">24/7 Helpline:</span>
-                    <span class="font-semibold text-sky-600">+91 98765 43211</span>
-                  </div>
+                 
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
     </section>
 
@@ -366,18 +366,20 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-900 text-white">
+  <footer class="bg-gray-900 text-white">
       <!-- Main Footer Content -->
       <div class="max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           <!-- Company Info -->
           <div class="space-y-4 md:space-y-6">
             <div>
-              <h2 class="text-xl md:text-2xl font-bold text-sky-400 mb-3 md:mb-4">
+              <h2
+                class="text-xl md:text-2xl font-bold text-sky-400 mb-3 md:mb-4">
                 Sunny <span class="text-white">Travels</span>
               </h2>
               <div>
-                <img  src="./images/logo.jpg" alt="">
+                <img src="./images/logo.jpg" alt="" />
               </div>
             </div>
 
@@ -424,7 +426,7 @@
             <ul class="space-y-3">
               <li>
                 <a
-                  href="index.html"
+                  href="#"
                   class="text-gray-300 hover:text-white transition-colors duration-300"
                   >Home</a
                 >
@@ -438,25 +440,12 @@
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#business-categories"
                   class="text-gray-300 hover:text-white transition-colors duration-300"
-                  >Our Services</a
+                  >Business Categories</a
                 >
               </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-300 hover:text-white transition-colors duration-300"
-                  >Fleet</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-300 hover:text-white transition-colors duration-300"
-                  >Pricing</a
-                >
-              </li>
+
               <li>
                 <a
                   href="contact.html"
@@ -524,24 +513,25 @@
             <div class="space-y-4">
               <div class="flex items-start space-x-3">
                 <svg
-                  class="w-5 h-5 text-sky-400 mt-1"
+                  class="w-16 h-16 text-sky-400 mt-1"
                   fill="none"
                   stroke="currentColor"
-                  viewBox="0 0 24 24">
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    d="M3 9.75L12 3l9 6.75v10.5a.75.75 0 01-.75.75h-5.25a.75.75 0 01-.75-.75V15a2.25 2.25 0 00-2.25-2.25H9.75A2.25 2.25 0 007.5 15v5.25a.75.75 0 01-.75.75H1.5a.75.75 0 01-.75-.75V9.75z" />
                 </svg>
+
                 <div>
-                  <p class="text-gray-300">123 Travel Street</p>
-                  <p class="text-gray-300">Mumbai, Maharashtra 400001</p>
+                  <p class="text-gray-300">
+                    Government High School Namkom, GROUND FLOOR, RUBY DEVI, C/O
+                    -ANIL KUMAR, SADABAHAR CHOWK, Namkum, KALI MANDIR,CHAI
+                    BAGAN,
+                  </p>
+                  <p class="text-gray-300">Ranchi, Jharkhand, 834010</p>
                 </div>
               </div>
 
@@ -557,7 +547,9 @@
                     stroke-width="2"
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                 </svg>
-                <p class="text-gray-300">+91 98765 43210</p>
+                <a href="tel:+918210005242" class="text-gray-300"
+                  >+91 8210005242</a
+                >
               </div>
 
               <div class="flex items-center space-x-3">
@@ -572,7 +564,7 @@
                     stroke-width="2"
                     d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
-                <p class="text-gray-300">info@sunnytravels.com</p>
+                <p class="text-gray-300">sbhushan.ranchi82@gmail.com</p>
               </div>
 
               <div class="flex items-center space-x-3">
@@ -600,7 +592,9 @@
           <div
             class="flex flex-col lg:flex-row items-center justify-between space-y-4 lg:space-y-0">
             <div class="text-center lg:text-left">
-              <h3 class="text-lg md:text-xl font-semibold mb-2">Stay Updated</h3>
+              <h3 class="text-lg md:text-xl font-semibold mb-2">
+                Stay Updated
+              </h3>
               <p class="text-sm md:text-base text-gray-300">
                 Subscribe to get special offers, free giveaways, and travel
                 updates.
@@ -670,6 +664,6 @@
       </svg>
     </a>
 
-    <script src="../script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
