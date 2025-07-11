@@ -1,70 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Dadi's Tour and Travel</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white text-black">
-  <!-- Hero Section -->
-  <section class="relative h-96 bg-cover bg-center" style="background-image: url('./images/bus.jpg')">
-    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-      <div class="text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">About Dadi's Tour and Travel</h1>
-        <p class="text-lg md:text-xl text-white max-w-2xl mx-auto">
-          Discover our passion for creating unforgettable travel experiences!
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="py-12 md:py-16">
-    <div class="max-w-7xl mx-auto px-4 md:px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">Our Story</h2>
-        <p class="text-base md:text-lg text-gray-800 max-w-3xl mx-auto">
-          Founded with a vision to make travel accessible and enjoyable for all, Dadi's Tour and Travel has been a trusted name in the industry for over a decade. 
-          Our journey began with a single bus and a dream to connect people with the beauty of the world. Today, we pride ourselves on offering a diverse fleet of luxury buses, AC vans, and traveler vehicles, ensuring comfort and safety on every trip. 
-          From family vacations to corporate outings, our dedicated team is committed to crafting seamless and memorable travel experiences tailored to your needs.
-        </p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-        <div>
-          <h3 class="text-2xl font-semibold text-black mb-4">Our Mission</h3>
-          <p class="text-base text-gray-800">
-            At Dadi's Tour and Travel, our mission is to provide reliable, comfortable, and affordable travel solutions that inspire exploration and create lasting memories. 
-            We strive to exceed expectations by offering personalized services and ensuring every journey is a delightful adventure.
-          </p>
-        </div>
-        <div>
-          <h3 class="text-2xl font-semibold text-black mb-4">Why Choose Us?</h3>
-          <ul class="text-base text-gray-800 list-disc list-inside space-y-2">
-            <li>Modern and well-maintained fleet of vehicles</li>
-            <li>Experienced and professional drivers</li>
-            <li>Customizable travel packages for all group sizes</li>
-            <li>24/7 customer support for a hassle-free experience</li>
-            <li>Commitment to safety and punctuality</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Dadi's Tour and Travel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Mobile menu animation */
+      .mobile-menu {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+      }
+      .mobile-menu.active {
+        transform: translateX(0);
+      }
+      /* Hamburger animation */
+      .hamburger span {
+        transition: all 0.3s ease;
+      }
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black">
+    <header class="bg-[#2a2a2a] text-white h-20 md:h-24 relative">
+      <div class="max-w-6xl mx-auto">
+        <!-- Top contact bar - hidden on mobile -->
+        <div class="hidden md:flex justify-between pt-4">
+          <ul class="flex space-x-4">
+            <li><i aria-hidden="true" class="fas fa-envelope text-yellow-400"></i> rahuldosad62@gmail.com</li>
+            <li><i aria-hidden="true" class="fas fa-phone-alt text-yellow-400"></i> 9675202800</li>
+            <li><i aria-hidden="true" class="fas fa-phone-alt text-yellow-400"></i> 7500660551</li>
+          </ul>
+          <ul class="flex space-x-4">
+            We Provide <span class="text-yellow-400 font-bold px-1"> The Best Service & Discounts </span>  For You
           </ul>
         </div>
+        
+        <!-- Main navigation bar -->
+        <div class="h-16 md:h-24 w-full text-black bg-white relative top-4 md:top-6 z-20 rounded-2xl flex justify-between px-4 items-center shadow-lg">
+          <h1 class="text-xl md:text-2xl font-bold">
+           <a href="./index.html">Dadi's Tour and Travel</a>
+          </h1>
+          
+          <!-- Desktop Navigation -->
+          <ul class="hidden md:flex space-x-8">
+            <li class="hover:text-yellow-600 text-yellow-500 cursor-pointer"><a href="./about.html">About</a></li>
+            <li class="hover:text-yellow-600 cursor-pointer text-gray-700"><a href="./services.html">Services</a></li>
+            <li class="hover:text-yellow-600 cursor-pointer text-gray-700"><a href="./contact.html">Contact</a></li>
+          </ul>
+          
+          <!-- Desktop Book Now Button -->
+          <button class="hidden md:block bg-yellow-500 text-white py-2 px-4 rounded-lg hover:bg-black transition-colors">
+            <a href="./contact.html">Book Now</a>
+          </button>
+          
+          <!-- Mobile Hamburger Menu -->
+          <button class="md:hidden hamburger flex flex-col justify-center items-center w-6 h-6 space-y-1" id="mobile-menu-btn">
+            <span class="w-5 h-0.5 bg-gray-800"></span>
+            <span class="w-5 h-0.5 bg-gray-800"></span>
+            <span class="w-5 h-0.5 bg-gray-800"></span>
+          </button>
+        </div>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-30 md:hidden" id="mobile-menu">
+          <div class="flex flex-col h-full">
+            <!-- Mobile Menu Header -->
+            <div class="flex justify-between items-center p-4 border-b">
+              <h2 class="text-xl font-bold text-gray-800">Dadi's Tour and Travel</h2>
+              <button class="hamburger active" id="mobile-menu-close">
+                <span class="block w-5 h-0.5 bg-gray-800"></span>
+                <span class="block w-5 h-0.5 bg-gray-800"></span>
+                <span class="block w-5 h-0.5 bg-gray-800"></span>
+              </button>
+            </div>
+            
+            <!-- Mobile Menu Items -->
+            <div class="flex-1 p-4">
+              <ul class="space-y-6">
+                <li class="text-lg">
+                  <a href="./index.html" class="block text-gray-700 hover:text-yellow-600 transition-colors">Home</a>
+                </li>
+                <li class="text-lg">
+                  <a href="./about.html" class="block text-yellow-500 font-semibold">About</a>
+                </li>
+                <li class="text-lg">
+                  <a href="./services.html" class="block text-gray-700 hover:text-yellow-600 transition-colors">Services</a>
+                </li>
+                <li class="text-lg">
+                  <a href="./contact.html" class="block text-gray-700 hover:text-yellow-600 transition-colors">Contact</a>
+                </li>
+              </ul>
+              
+              <!-- Mobile Contact Info -->
+              <div class="mt-8 space-y-4">
+                <div class="border-t pt-4">
+                  <h3 class="text-lg font-semibold text-gray-800 mb-4">Contact Us</h3>
+                  <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                      <i class="fas fa-envelope text-yellow-400"></i>
+                      <span class="text-gray-700">rahuldosad62@gmail.com</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <i class="fas fa-phone-alt text-yellow-400"></i>
+                      <span class="text-gray-700">9675202800</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <i class="fas fa-phone-alt text-yellow-400"></i>
+                      <span class="text-gray-700">7500660551</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Mobile Book Now Button -->
+            <div class="p-4 border-t">
+              <button class="w-full bg-yellow-500 text-white py-3 px-4 rounded-lg hover:bg-yellow-600 transition-colors font-semibold">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="relative h-96 bg-cover bg-center"
+      style="background-image: url('./images/bus.jpg')">
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            About Dadi's Tour and Travel
+          </h1>
+          <p class="text-lg md:text-xl text-white max-w-2xl mx-auto">
+            Discover our passion for creating unforgettable travel experiences!
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Call to Action Section -->
-  <section class="py-8 md:py-12 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4 md:px-6 text-center">
-      <p class="text-base md:text-lg text-gray-800 mb-6">
-        Ready to embark on your next adventure with Dadi's Tour and Travel?
-      </p>
-      <a
-        href="#"
-        class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 md:px-8 py-2.5 md:py-3 font-semibold rounded-lg transition-colors duration-300"
-      >
-        Plan Your Journey Today
-      </a>
-    </div>
-  </section>
-</body>
+    <!-- About Section -->
+    <section class="py-12 md:py-16">
+      <div class="max-w-7xl mx-auto px-4 md:px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+            Our Story
+          </h2>
+          <p class="text-base md:text-lg text-gray-800 max-w-3xl mx-auto">
+            Founded with a vision to make travel accessible and enjoyable for
+            all, Dadi's Tour and Travel has been a trusted name in the industry
+            for over a decade. Our journey began with a single bus and a dream
+            to connect people with the beauty of the world. Today, we pride
+            ourselves on offering a diverse fleet of luxury buses, AC vans, and
+            traveler vehicles, ensuring comfort and safety on every trip. From
+            family vacations to corporate outings, our dedicated team is
+            committed to crafting seamless and memorable travel experiences
+            tailored to your needs.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <div>
+            <h3 class="text-2xl font-semibold text-black mb-4">Our Mission</h3>
+            <p class="text-base text-gray-800">
+              At Dadi's Tour and Travel, our mission is to provide reliable,
+              comfortable, and affordable travel solutions that inspire
+              exploration and create lasting memories. We strive to exceed
+              expectations by offering personalized services and ensuring every
+              journey is a delightful adventure.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-black mb-4">
+              Why Choose Us?
+            </h3>
+            <ul class="text-base text-gray-800 list-disc list-inside space-y-2">
+              <li>Modern and well-maintained fleet of vehicles</li>
+              <li>Experienced and professional drivers</li>
+              <li>Customizable travel packages for all group sizes</li>
+              <li>24/7 customer support for a hassle-free experience</li>
+              <li>Commitment to safety and punctuality</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-8 md:py-12 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 text-center">
+        <p class="text-base md:text-lg text-gray-800 mb-6">
+          Ready to embark on your next adventure with Dadi's Tour and Travel?
+        </p>
+        <a
+          href="#"
+          class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 md:px-8 py-2.5 md:py-3 font-semibold rounded-lg transition-colors duration-300">
+          Plan Your Journey Today
+        </a>
+      </div>
+    </section>
+
+    <script>
+      // Mobile menu functionality
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+      function toggleMobileMenu() {
+        mobileMenu.classList.toggle('active');
+        mobileMenuBtn.classList.toggle('active');
+      }
+
+      mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+      mobileMenuClose.addEventListener('click', toggleMobileMenu);
+
+      // Close mobile menu when clicking on menu items
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('active');
+          mobileMenuBtn.classList.remove('active');
+        });
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+          mobileMenu.classList.remove('active');
+          mobileMenuBtn.classList.remove('active');
+        }
+      });
+    </script>
+  </body>
 </html>

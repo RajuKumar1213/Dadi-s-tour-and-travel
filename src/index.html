@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -930,12 +931,38 @@
         }
       }
     </style>
+
+       <style>
+      /* Mobile menu animation */
+      .mobile-menu {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+      }
+      .mobile-menu.active {
+        transform: translateX(0);
+      }
+      /* Hamburger animation */
+      .hamburger span {
+        transition: all 0.3s ease;
+      }
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    </style>
+     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body
     class="home page-template page-template-elementor_header_footer page page-id-100 jkit-color-scheme elementor-default elementor-template-full-width elementor-kit-3 elementor-page elementor-page-100">
     <div id="page" class="jkit-template site">
       <header
+        class="hidden md:block"
         id="masthead"
         itemscope="itemscope"
         itemtype="https://schema.org/WPHeader">
@@ -2542,11 +2569,9 @@
                                 class="jeg-elementor-kit jkit-nav-menu break-point-tablet submenu-click-title jeg_module_100_1_687094a20b091"
                                 data-item-indicator='&lt;i aria-hidden="true" class="jki jki-chevron-down-line"&gt;&lt;/i&gt;'>
                                 <button class="jkit-hamburger-menu">
-                                  <i
-                                    aria-hidden="true"
-                                    class="jki jki-bars-solid"></i>
+                                  <i class="fa-solid fa-bars"></i>
                                 </button>
-                                <div class="jkit-menu-wrapper">
+                                <div class="jkit-menu-wrapper z-50">
                                   <div class="jkit-menu-container">
                                     <ul
                                       id="menu-menu-taxico"
@@ -2570,18 +2595,11 @@
                                     </ul>
                                   </div>
                                   <div class="jkit-nav-identity-panel">
-                                    <div class="jkit-nav-site-title">
-                                      <a
-                                        href="https://templatekit.jegtheme.com/taxico"
-                                        class="jkit-nav-logo"
-                                        ><img
-                                          src="https://templatekit.jegtheme.com/taxico/wp-content/uploads/sites/190/2021/10/logo2-9NBZ6P-e1635074676704.png"
-                                      /></a>
+                                    <div class="mt-14">
+                                      <h1 class="text-2xl font-black">Logo</h1>
                                     </div>
                                     <button class="jkit-close-menu">
-                                      <i
-                                        aria-hidden="true"
-                                        class="jki jki-times-solid"></i>
+                                      <i class="fa-solid fa-xmark"></i>
                                     </button>
                                   </div>
                                 </div>
@@ -2624,16 +2642,167 @@
         </div>
       </header>
 
-     <header class="bg-gray-900 h-24 w-screen">
-      <div class="max-w-6xl">
+      <header class="bg-[#2a2a2a] md:hidden z-40 block text-white h-20 md:h-24 relative">
+        <div class="max-w-6xl mx-auto">
+          <!-- Top contact bar - hidden on mobile -->
+          <div class="hidden md:flex justify-between pt-4">
+            <ul class="flex space-x-4">
+              <li>
+                <i
+                  aria-hidden="true"
+                  class="fas fa-envelope text-yellow-400"></i>
+                rahuldosad62@gmail.com
+              </li>
+              <li>
+                <i
+                  aria-hidden="true"
+                  class="fas fa-phone-alt text-yellow-400"></i>
+                9675202800
+              </li>
+              <li>
+                <i
+                  aria-hidden="true"
+                  class="fas fa-phone-alt text-yellow-400"></i>
+                7500660551
+              </li>
+            </ul>
+            <ul class="flex space-x-4">
+              We Provide
+              <span class="text-yellow-400 font-bold px-1">
+                The Best Service & Discounts
+              </span>
+              For You
+            </ul>
+          </div>
 
-      </div>
-     </header>
+          <!-- Main navigation bar -->
+          <div
+            class="h-16 md:h-24 w-full text-black bg-white relative top-4 md:top-6 z-20 rounded-2xl flex justify-between px-4 items-center shadow-lg">
+            <h1 class="text-xl md:text-2xl font-bold">
+              <a href="./index.html">Dadi's Tour and Travel</a>
+            </h1>
+
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-8">
+              <li class="hover:text-yellow-600 text-gray-700 cursor-pointer">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="hover:text-yellow-600 cursor-pointer text-gray-700">
+                <a href="./services.html">Services</a>
+              </li>
+              <li class="hover:text-yellow-600 cursor-pointer text-yellow-500">
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <!-- Desktop Book Now Button -->
+            <button
+              class="hidden md:block bg-yellow-500 text-white py-2 px-4 rounded-lg hover:bg-black transition-colors">
+              <a href="./contact.html">Book Now</a>
+            </button>
+
+            <!-- Mobile Hamburger Menu -->
+            <button
+              class="hamburger flex flex-col justify-center items-center w-6 h-6 space-y-1"
+              id="mobile-menu-btn">
+              <span class="w-5 h-0.5 bg-gray-800"></span>
+              <span class="w-5 h-0.5 bg-gray-800"></span>
+              <span class="w-5 h-0.5 bg-gray-800"></span>
+            </button>
+          </div>
+
+          <!-- Mobile Menu Overlay -->
+          <div
+            class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-30 md:hidden"
+            id="mobile-menu">
+            <div class="flex flex-col h-full">
+              <!-- Mobile Menu Header -->
+              <div class="flex justify-between items-center p-4 border-b">
+                <h2 class="text-xl font-bold text-gray-800">
+                  Dadi's Tour and Travel
+                </h2>
+                <button class="hamburger active" id="mobile-menu-close">
+                  <span class="block w-5 h-0.5 bg-gray-800"></span>
+                  <span class="block w-5 h-0.5 bg-gray-800"></span>
+                  <span class="block w-5 h-0.5 bg-gray-800"></span>
+                </button>
+              </div>
+              <!-- Mobile Close Button -->
+              <!-- Mobile Menu Items -->
+              <div class="flex-1 p-4">
+                <ul class="space-y-6">
+                  <li class="text-lg">
+                    <a
+                      href="./index.html"
+                      class="block text-gray-700 hover:text-yellow-600 transition-colors"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="text-lg">
+                    <a
+                      href="./about.html"
+                      class="block text-gray-700 hover:text-yellow-600 transition-colors"
+                      >About</a
+                    >
+                  </li>
+                  <li class="text-lg">
+                    <a
+                      href="./services.html"
+                      class="block text-gray-700 hover:text-yellow-600 transition-colors"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="text-lg">
+                    <a
+                      href="./contact.html"
+                      class="block text-yellow-500 font-semibold"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- Mobile Contact Info -->
+                <div class="mt-8 space-y-4">
+                  <div class="border-t pt-4">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                      Contact Us
+                    </h3>
+                    <div class="space-y-3">
+                      <div class="flex items-center space-x-3">
+                        <i class="fas fa-envelope text-yellow-400"></i>
+                        <span class="text-gray-700"
+                          >rahuldosad62@gmail.com</span
+                        >
+                      </div>
+                      <div class="flex items-center space-x-3">
+                        <i class="fas fa-phone-alt text-yellow-400"></i>
+                        <span class="text-gray-700">9675202800</span>
+                      </div>
+                      <div class="flex items-center space-x-3">
+                        <i class="fas fa-phone-alt text-yellow-400"></i>
+                        <span class="text-gray-700">7500660551</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mobile Book Now Button -->
+              <div class="p-4 border-t">
+                <button
+                  class="w-full bg-yellow-500 text-white py-3 px-4 rounded-lg hover:bg-yellow-600 transition-colors font-semibold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
 
       <div
         data-elementor-type="wp-page"
         data-elementor-id="100"
-        class="elementor elementor-100">
+        class="elementor elementor-100 ">
         <section
           class="elementor-section elementor-top-section elementor-element elementor-element-98a8912 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
           data-id="98a8912"
@@ -3790,521 +3959,7 @@
         </section>
 
         <section
-          class="elementor-section elementor-top-section elementor-element elementor-element-639f0b1 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-          data-id="639f0b1"
-          data-element_type="section"
-          data-settings='{"background_background":"classic"}'>
-          <div class="elementor-container elementor-column-gap-default">
-            <div
-              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1b5b2ca"
-              data-id="1b5b2ca"
-              data-element_type="column">
-              <div class="elementor-widget-wrap elementor-element-populated">
-                <div
-                  class="elementor-element elementor-element-4844ba6 elementor-widget elementor-widget-heading"
-                  data-id="4844ba6"
-                  data-element_type="widget"
-                  data-widget_type="heading.default">
-                  <div class="elementor-widget-container">
-                    <h2 class="elementor-heading-title elementor-size-default">
-                      Taxi Rates
-                    </h2>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-c4a3287 elementor-widget elementor-widget-jkit_heading"
-                  data-id="c4a3287"
-                  data-element_type="widget"
-                  data-widget_type="jkit_heading.default">
-                  <div class="elementor-widget-container">
-                    <div
-                      class="jeg-elementor-kit jkit-heading align-center align-tablet- align-mobile- jeg_module_100_16_687094a23a6cd">
-                      <div class="heading-section-title display-inline-block">
-                        <h2 class="heading-title">
-                          Flexible Taxi Rates<span class="style-color"
-                            ><span>.</span></span
-                          >
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-cadeb72 elementor-widget elementor-widget-text-editor"
-                  data-id="cadeb72"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default">
-                  <div class="elementor-widget-container">
-                    <p>
-                      Our commitment to excellence has made us a trusted partner
-                      for thousands of travelers. We maintain the highest
-                      standards of safety, comfort, and punctuality for all our
-                      services.
-                    </p>
-                  </div>
-                </div>
-                <section
-                  class="elementor-section elementor-inner-section elementor-element elementor-element-cd5a402 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                  data-id="cd5a402"
-                  data-element_type="section">
-                  <div class="elementor-container elementor-column-gap-default">
-                    <div
-                      class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-87eeb90"
-                      data-id="87eeb90"
-                      data-element_type="column"
-                      data-settings='{"background_background":"classic"}'>
-                      <div
-                        class="elementor-widget-wrap elementor-element-populated">
-                        <div
-                          class="elementor-element elementor-element-ec96d94 elementor-widget__width-auto elementor-widget elementor-widget-heading"
-                          data-id="ec96d94"
-                          data-element_type="widget"
-                          data-widget_type="heading.default">
-                          <div class="elementor-widget-container">
-                            <h3
-                              class="elementor-heading-title elementor-size-default">
-                              Standard
-                            </h3>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-1f82b4e elementor-widget elementor-widget-text-editor"
-                          data-id="1f82b4e"
-                          data-element_type="widget"
-                          data-widget_type="text-editor.default">
-                          <div class="elementor-widget-container">
-                            <p>
-                              Professional drivers with excellent local
-                              knowledge and commitment to passenger safety.
-                            </p>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-b8166c9 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-                          data-id="b8166c9"
-                          data-element_type="widget"
-                          data-widget_type="divider.default">
-                          <div class="elementor-widget-container">
-                            <div class="elementor-divider">
-                              <span class="elementor-divider-separator"> </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-1b1a397 elementor-align-left elementor-widget__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                          data-id="1b1a397"
-                          data-element_type="widget"
-                          data-widget_type="icon-list.default">
-                          <div class="elementor-widget-container">
-                            <ul class="elementor-icon-list-items">
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Initial Charge</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Dist. Allowance</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Time Allowance</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Up to 15 kms</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Booking Fee</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Extra Passangers</span
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-288f4c0 elementor-align-right elementor-widget__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                          data-id="288f4c0"
-                          data-element_type="widget"
-                          data-widget_type="icon-list.default">
-                          <div class="elementor-widget-container">
-                            <ul class="elementor-icon-list-items">
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >$3.50</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >700 m</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >120 sec</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >$1.45/km</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >$0.62/min</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >$1.40/km</span
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-93492de elementor-widget elementor-widget-spacer"
-                          data-id="93492de"
-                          data-element_type="widget"
-                          data-widget_type="spacer.default">
-                          <div class="elementor-widget-container">
-                            <div class="elementor-spacer">
-                              <div class="elementor-spacer-inner"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-c33f13a elementor-widget elementor-widget-jkit_button"
-                          data-id="c33f13a"
-                          data-element_type="widget"
-                          data-widget_type="jkit_button.default">
-                          <div class="elementor-widget-container">
-                            <div
-                              class="jeg-elementor-kit jkit-button icon-position-before jeg_module_100_17_687094a23cf13">
-                              <a href="" class="jkit-button-wrapper"
-                                >Booking Now</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-07beea0"
-                      data-id="07beea0"
-                      data-element_type="column"
-                      data-settings='{"background_background":"classic"}'>
-                      <div
-                        class="elementor-widget-wrap elementor-element-populated">
-                        <div
-                          class="elementor-element elementor-element-e4948c4 elementor-widget__width-auto elementor-widget elementor-widget-heading"
-                          data-id="e4948c4"
-                          data-element_type="widget"
-                          data-widget_type="heading.default">
-                          <div class="elementor-widget-container">
-                            <h3
-                              class="elementor-heading-title elementor-size-default">
-                              Premium
-                            </h3>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-afd8449 elementor-widget elementor-widget-text-editor"
-                          data-id="afd8449"
-                          data-element_type="widget"
-                          data-widget_type="text-editor.default">
-                          <div class="elementor-widget-container">
-                            <p>
-                              Well-maintained fleet of vehicles with regular
-                              servicing and modern amenities for passenger
-                              comfort.
-                            </p>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-4aa0340 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-                          data-id="4aa0340"
-                          data-element_type="widget"
-                          data-widget_type="divider.default">
-                          <div class="elementor-widget-container">
-                            <div class="elementor-divider">
-                              <span class="elementor-divider-separator"> </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-11b87ca elementor-align-left elementor-widget__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                          data-id="11b87ca"
-                          data-element_type="widget"
-                          data-widget_type="icon-list.default">
-                          <div class="elementor-widget-container">
-                            <ul class="elementor-icon-list-items">
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Initial Charge</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Dist. Allowance</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Time Allowance</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Up to 15 kms</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Booking Fee</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Extra Passangers</span
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-9e7c200 elementor-align-right elementor-widget__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                          data-id="9e7c200"
-                          data-element_type="widget"
-                          data-widget_type="icon-list.default">
-                          <div class="elementor-widget-container">
-                            <ul class="elementor-icon-list-items">
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >$4.50</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >1000 m</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >120 sec</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >$2.45/km</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >$0.70/min</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >$2.40/km</span
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-d798895 elementor-widget elementor-widget-spacer"
-                          data-id="d798895"
-                          data-element_type="widget"
-                          data-widget_type="spacer.default">
-                          <div class="elementor-widget-container">
-                            <div class="elementor-spacer">
-                              <div class="elementor-spacer-inner"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-c70e2e3 elementor-widget elementor-widget-jkit_button"
-                          data-id="c70e2e3"
-                          data-element_type="widget"
-                          data-widget_type="jkit_button.default">
-                          <div class="elementor-widget-container">
-                            <div
-                              class="jeg-elementor-kit jkit-button icon-position-before jeg_module_100_18_687094a23f3ce">
-                              <a href="" class="jkit-button-wrapper"
-                                >Booking Now</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a85fe80"
-                      data-id="a85fe80"
-                      data-element_type="column"
-                      data-settings='{"background_background":"classic"}'>
-                      <div
-                        class="elementor-widget-wrap elementor-element-populated">
-                        <div
-                          class="elementor-element elementor-element-6b44940 elementor-widget__width-auto elementor-widget elementor-widget-heading"
-                          data-id="6b44940"
-                          data-element_type="widget"
-                          data-widget_type="heading.default">
-                          <div class="elementor-widget-container">
-                            <h3
-                              class="elementor-heading-title elementor-size-default">
-                              Additional
-                            </h3>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-8e24de9 elementor-widget elementor-widget-text-editor"
-                          data-id="8e24de9"
-                          data-element_type="widget"
-                          data-widget_type="text-editor.default">
-                          <div class="elementor-widget-container">
-                            <p>
-                              24/7 customer support and transparent pricing with
-                              no hidden charges for all our travel services.
-                            </p>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-6918851 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-                          data-id="6918851"
-                          data-element_type="widget"
-                          data-widget_type="divider.default">
-                          <div class="elementor-widget-container">
-                            <div class="elementor-divider">
-                              <span class="elementor-divider-separator"> </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-e44215b elementor-align-left elementor-widget__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                          data-id="e44215b"
-                          data-element_type="widget"
-                          data-widget_type="icon-list.default">
-                          <div class="elementor-widget-container">
-                            <ul class="elementor-icon-list-items">
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Initial Charge</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Dist. Allowance</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Time Allowance</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Up to 15 kms</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Booking Fee</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >Extra Passangers</span
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-dcf355b elementor-align-right elementor-widget__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                          data-id="dcf355b"
-                          data-element_type="widget"
-                          data-widget_type="icon-list.default">
-                          <div class="elementor-widget-container">
-                            <ul class="elementor-icon-list-items">
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >$5.40</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >1500 m</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >120 sec</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >$3.45/km</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >$0.82/min</span
-                                >
-                              </li>
-                              <li class="elementor-icon-list-item">
-                                <span class="elementor-icon-list-text"
-                                  >$3.40/km</span
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-f52f3d2 elementor-widget elementor-widget-spacer"
-                          data-id="f52f3d2"
-                          data-element_type="widget"
-                          data-widget_type="spacer.default">
-                          <div class="elementor-widget-container">
-                            <div class="elementor-spacer">
-                              <div class="elementor-spacer-inner"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="elementor-element elementor-element-4bd8e1a elementor-widget elementor-widget-jkit_button"
-                          data-id="4bd8e1a"
-                          data-element_type="widget"
-                          data-widget_type="jkit_button.default">
-                          <div class="elementor-widget-container">
-                            <div
-                              class="jeg-elementor-kit jkit-button icon-position-before jeg_module_100_19_687094a241b33">
-                              <a href="" class="jkit-button-wrapper"
-                                >Booking Now</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          class="elementor-section -mt-44 elementor-top-section elementor-element elementor-element-2c6bb35 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+          class="elementor-section elementor-top-section elementor-element elementor-element-2c6bb35 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
           data-id="2c6bb35"
           data-element_type="section">
           <div class="elementor-container elementor-column-gap-default">
@@ -6824,7 +6479,7 @@
                           </div>
                         </div>
                       </div>
-                     
+
                       <div
                         class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b289d9f"
                         data-id="b289d9f"
@@ -7141,5 +6796,37 @@
     <script
       src="https://templatekit.jegtheme.com/taxico/wp-content/plugins/jeg-elementor-kit/assets/js/elements/mailchimp.js?ver=2.6.2"
       id="jkit-element-mailchimp-js"></script>
+
+    <script>
+      // Mobile menu functionality
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+      function toggleMobileMenu() {
+        mobileMenu.classList.toggle('active');
+        mobileMenuBtn.classList.toggle('active');
+      }
+
+      mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+      mobileMenuClose.addEventListener('click', toggleMobileMenu);
+
+      // Close mobile menu when clicking on menu items
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('active');
+          mobileMenuBtn.classList.remove('active');
+        });
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+          mobileMenu.classList.remove('active');
+          mobileMenuBtn.classList.remove('active');
+        }
+      });
+    </script>
   </body>
 </html>
