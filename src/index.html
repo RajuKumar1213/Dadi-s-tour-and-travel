@@ -932,7 +932,7 @@
       }
     </style>
 
-       <style>
+    <style>
       /* Mobile menu animation */
       .mobile-menu {
         transform: translateX(-100%);
@@ -955,7 +955,7 @@
         transform: rotate(-45deg) translate(7px, -6px);
       }
     </style>
-     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body
@@ -2586,6 +2586,11 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-917">
                                         <a href="./services.html">Services</a>
                                       </li>
+                                      <li
+                                        id="menu-item-917"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-917">
+                                        <a href="./our-cabs.html">Our Cabs</a>
+                                      </li>
 
                                       <li
                                         id="menu-item-913"
@@ -2594,14 +2599,7 @@
                                       </li>
                                     </ul>
                                   </div>
-                                  <div class="jkit-nav-identity-panel">
-                                    <div class="mt-14">
-                                      <h1 class="text-2xl font-black">Logo</h1>
-                                    </div>
-                                    <button class="jkit-close-menu">
-                                      <i class="fa-solid fa-xmark"></i>
-                                    </button>
-                                  </div>
+                                  
                                 </div>
                                 <div class="jkit-overlay"></div>
                               </div>
@@ -2642,7 +2640,8 @@
         </div>
       </header>
 
-      <header class="bg-[#2a2a2a] md:hidden z-40 block text-white h-20 md:h-24 relative">
+      <header
+        class="bg-[#2a2a2a] md:hidden z-40 block text-white h-20 md:h-24 relative">
         <div class="max-w-6xl mx-auto">
           <!-- Top contact bar - hidden on mobile -->
           <div class="hidden md:flex justify-between pt-4">
@@ -2703,11 +2702,9 @@
 
             <!-- Mobile Hamburger Menu -->
             <button
-              class="hamburger flex flex-col justify-center items-center w-6 h-6 space-y-1"
+              class="bg-white flex flex-col justify-center items-center w-6 h-6 space-y-1"
               id="mobile-menu-btn">
-              <span class="w-5 h-0.5 bg-gray-800"></span>
-              <span class="w-5 h-0.5 bg-gray-800"></span>
-              <span class="w-5 h-0.5 bg-gray-800"></span>
+             <i class="fa-solid fa-bars text-xl"></i>
             </button>
           </div>
 
@@ -2727,17 +2724,11 @@
                   <span class="block w-5 h-0.5 bg-gray-800"></span>
                 </button>
               </div>
+              =
               <!-- Mobile Close Button -->
               <!-- Mobile Menu Items -->
               <div class="flex-1 p-4">
                 <ul class="space-y-6">
-                  <li class="text-lg">
-                    <a
-                      href="./index.html"
-                      class="block text-gray-700 hover:text-yellow-600 transition-colors"
-                      >Home</a
-                    >
-                  </li>
                   <li class="text-lg">
                     <a
                       href="./about.html"
@@ -2754,8 +2745,15 @@
                   </li>
                   <li class="text-lg">
                     <a
+                      href="./our-cabs.html"
+                      class="block text-gray-700 hover:text-yellow-600 transition-colors"
+                      >Our Cabs</a
+                    >
+                  </li>
+                  <li class="text-lg">
+                    <a
                       href="./contact.html"
-                      class="block text-yellow-500 font-semibold"
+                      class="block hover:text-yellow-500 font-semibold"
                       >Contact</a
                     >
                   </li>
@@ -2802,7 +2800,7 @@
       <div
         data-elementor-type="wp-page"
         data-elementor-id="100"
-        class="elementor elementor-100 ">
+        class="elementor elementor-100">
         <section
           class="elementor-section elementor-top-section elementor-element elementor-element-98a8912 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
           data-id="98a8912"
@@ -4615,7 +4613,7 @@
           </div>
         </section>
 
-        <section
+        <!-- <section
           class="elementor-section elementor-top-section elementor-element elementor-element-5e9c53c elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
           data-id="5e9c53c"
           data-element_type="section"
@@ -4858,1681 +4856,276 @@
               </div>
             </div>
           </div>
-        </section>
-
-        <section class="py-8 md:py-16 bg-white">
-          <div class="max-w-7xl mx-auto px-4 md:px-6">
-            <!-- Section Header -->
-            <div class="text-center mb-8 md:mb-12">
-              <h2
-                class="text-2xl md:text-4xl font-bold text-gray-800 mb-3 md:mb-4">
-                Our Gallery
-              </h2>
-              <p class="text-sm md:text-base text-gray-600 max-w-2xl mx-auto">
-                Explore our fleet of vehicles and see the amazing journeys our
-                customers have experienced with Dadi's Tour and Travel
-              </p>
-            </div>
-
-            <!-- Gallery Grid -->
-            <div
-              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-              <!-- Image items with consistent aspect ratio -->
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/bus.jpg"
-                  alt="Luxury Bus Interior"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/busfront.jpg"
-                  alt="15 Seater Non-AC Van"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/insideacbus.jpg"
-                  alt="AC Van"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/insideacbus2.jpg"
-                  alt="15 Seater AC Van"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/insideacbus3.jpg"
-                  alt="Inside AC Van"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/insideacbus4.jpg"
-                  alt="Inside Bus"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/car.jpg"
-                  alt="AC Van Interior"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/car1.jpg"
-                  alt="Interior View"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/car2.jpg"
-                  alt="Big Bus Interior"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/car3.jpg"
-                  alt="Traveler Bus"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/carinside.jpg"
-                  alt="Mini Bus"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/towcar.jpg"
-                  alt="Traveller Vehicle"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/traveler.jpg"
-                  alt="Traveller Vehicle"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="relative overflow-hidden rounded-lg group">
-                <img
-                  src="./images/van.jpg"
-                  alt="Van Vehicle"
-                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-            </div>
-
-            <!-- Gallery Call to Action -->
-            <div class="text-center mt-8 md:mt-12">
-              <p class="text-sm md:text-base text-gray-600 mb-4 md:mb-6">
-                Want to create your own travel memories?
-              </p>
-              <button
-                class="bg-sky-500 hover:bg-sky-600 text-white px-6 md:px-8 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-lg transition-colors duration-300">
-                📸 Book Your Journey Today
-              </button>
-            </div>
-          </div>
-        </section>
+        </section> -->
       </div>
 
-      <footer itemscope="itemscope" itemtype="https://schema.org/WPFooter">
-        <style>
-          .elementor-578
-            .elementor-element.elementor-element-328c9c9:not(
-              .elementor-motion-effects-element-type-background
-            ),
-          .elementor-578
-            .elementor-element.elementor-element-328c9c9
-            > .elementor-motion-effects-container
-            > .elementor-motion-effects-layer {
-            background-color: var(--e-global-color-accent);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-328c9c9
-            > .elementor-background-overlay {
-            background-image: url("https://templatekit.jegtheme.com/taxico/wp-content/uploads/sites/190/2021/10/bg-footer-e1635074657734.png");
-            background-position: 0% 36%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            opacity: 0.1;
-            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-          }
-          .elementor-578 .elementor-element.elementor-element-328c9c9 {
-            transition: background 0.3s, border 0.3s, border-radius 0.3s,
-              box-shadow 0.3s;
-            padding: 80px 0px 80px 0px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-6d797b3.elementor-column
-            > .elementor-widget-wrap {
-            justify-content: center;
-          }
-          .elementor-578 .elementor-element.elementor-element-18d0fe8 {
-            text-align: center;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-18d0fe8
-            .elementor-heading-title {
-            color: var(--e-global-color-primary);
-            font-family: var(--e-global-typography-3575ebf-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-3575ebf-font-size);
-            font-weight: var(--e-global-typography-3575ebf-font-weight);
-            line-height: var(--e-global-typography-3575ebf-line-height);
-            letter-spacing: var(--e-global-typography-3575ebf-letter-spacing);
-            word-spacing: var(--e-global-typography-3575ebf-word-spacing);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-2029499
-            .jeg-elementor-kit.jkit-heading {
-            text-align: center;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-2029499
-            .jeg-elementor-kit.jkit-heading
-            .heading-title {
-            -webkit-box-decoration-break: clone;
-            box-decoration-break: clone;
-            display: inline;
-            font-family: var(--e-global-typography-secondary-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-secondary-font-size);
-            font-weight: var(--e-global-typography-secondary-font-weight);
-            line-height: var(--e-global-typography-secondary-line-height);
-            color: var(--e-global-color-primary);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-2029499
-            .jeg-elementor-kit.jkit-heading
-            .heading-section-title {
-            margin: 0px 0px 0px 0px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-2029499
-            .jeg-elementor-kit.jkit-heading
-            .heading-title
-            > span {
-            color: var(--e-global-color-primary);
-            font-family: var(--e-global-typography-secondary-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-secondary-font-size);
-            font-weight: var(--e-global-typography-secondary-font-weight);
-            line-height: var(--e-global-typography-secondary-line-height);
-            padding: 0px 0px 0px 0px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-2029499
-            > .elementor-widget-container {
-            margin: 0px 0px -10px 0px;
-            padding: 0% 20% 0% 20%;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-feedee8
-            .elementor-icon-box-wrapper {
-            text-align: left;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-feedee8.elementor-view-stacked
-            .elementor-icon {
-            background-color: var(--e-global-color-primary);
-            fill: var(--e-global-color-accent);
-            color: var(--e-global-color-accent);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-feedee8.elementor-view-framed
-            .elementor-icon,
-          .elementor-578
-            .elementor-element.elementor-element-feedee8.elementor-view-default
-            .elementor-icon {
-            fill: var(--e-global-color-primary);
-            color: var(--e-global-color-primary);
-            border-color: var(--e-global-color-primary);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-feedee8.elementor-view-framed
-            .elementor-icon {
-            background-color: var(--e-global-color-accent);
-          }
-          .elementor-578 .elementor-element.elementor-element-feedee8 {
-            --icon-box-icon-margin: 15px;
-            width: auto;
-            max-width: auto;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-feedee8
-            .elementor-icon {
-            font-size: 30px;
-            border-radius: 10px 10px 10px 10px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-feedee8
-            .elementor-icon-box-title {
-            margin-bottom: 0px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-feedee8
-            .elementor-icon-box-title,
-          .elementor-578
-            .elementor-element.elementor-element-feedee8
-            .elementor-icon-box-title
-            a {
-            font-family: var(--e-global-typography-c68815b-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-c68815b-font-size);
-            font-weight: var(--e-global-typography-c68815b-font-weight);
-            line-height: var(--e-global-typography-c68815b-line-height);
-            letter-spacing: var(--e-global-typography-c68815b-letter-spacing);
-            word-spacing: var(--e-global-typography-c68815b-word-spacing);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-feedee8
-            > .elementor-widget-container {
-            margin: 10px 0px 0px 0px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-a5b5444
-            > .elementor-container {
-            max-width: 1150px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-a5b5444:not(
-              .elementor-motion-effects-element-type-background
-            ),
-          .elementor-578
-            .elementor-element.elementor-element-a5b5444
-            > .elementor-motion-effects-container
-            > .elementor-motion-effects-layer {
-            background-color: var(--e-global-color-primary);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-a5b5444
-            > .elementor-background-overlay {
-            background-image: url("https://templatekit.jegtheme.com/taxico/wp-content/uploads/sites/190/2021/10/dubai-aerial-view-e1635074776583.jpg");
-            background-position: bottom center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            opacity: 0.05;
-            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-          }
-          .elementor-578 .elementor-element.elementor-element-a5b5444 {
-            transition: background 0.3s, border 0.3s, border-radius 0.3s,
-              box-shadow 0.3s;
-            padding: 100px 0px 20px 0px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-a33669f
-            > .elementor-container {
-            max-width: 1220px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-a33669f
-            > .elementor-container
-            > .elementor-column
-            > .elementor-widget-wrap {
-            align-content: center;
-            align-items: center;
-          }
-          .elementor-578 .elementor-element.elementor-element-a33669f {
-            margin-top: 0px;
-            margin-bottom: 150px;
-            padding: 0px 0px 0px 0px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-22be06f
-            > .elementor-element-populated {
-            margin: 0px 10px 0px 10px;
-            --e-column-margin-right: 10px;
-            --e-column-margin-left: 10px;
-          }
-          .elementor-578 .elementor-element.elementor-element-a9419e5 {
-            text-align: center;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-a9419e5
-            .elementor-heading-title {
-            color: var(--e-global-color-secondary);
-            font-family: var(--e-global-typography-3f36f7f-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-3f36f7f-font-size);
-            font-weight: var(--e-global-typography-3f36f7f-font-weight);
-            line-height: var(--e-global-typography-3f36f7f-line-height);
-            letter-spacing: var(--e-global-typography-3f36f7f-letter-spacing);
-            word-spacing: var(--e-global-typography-3f36f7f-word-spacing);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0662731
-            .elementor-icon-list-items:not(.elementor-inline-items)
-            .elementor-icon-list-item:not(:last-child) {
-            padding-bottom: calc(10px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0662731
-            .elementor-icon-list-items:not(.elementor-inline-items)
-            .elementor-icon-list-item:not(:first-child) {
-            margin-top: calc(10px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0662731
-            .elementor-icon-list-items.elementor-inline-items
-            .elementor-icon-list-item {
-            margin-right: calc(10px / 2);
-            margin-left: calc(10px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0662731
-            .elementor-icon-list-items.elementor-inline-items {
-            margin-right: calc(-10px / 2);
-            margin-left: calc(-10px / 2);
-          }
-          body.rtl
-            .elementor-578
-            .elementor-element.elementor-element-0662731
-            .elementor-icon-list-items.elementor-inline-items
-            .elementor-icon-list-item:after {
-            left: calc(-10px / 2);
-          }
-          body:not(.rtl)
-            .elementor-578
-            .elementor-element.elementor-element-0662731
-            .elementor-icon-list-items.elementor-inline-items
-            .elementor-icon-list-item:after {
-            right: calc(-10px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0662731
-            .elementor-icon-list-icon
-            i {
-            color: var(--e-global-color-accent);
-            transition: color 0.3s;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0662731
-            .elementor-icon-list-icon
-            svg {
-            fill: var(--e-global-color-accent);
-            transition: fill 0.3s;
-          }
-          .elementor-578 .elementor-element.elementor-element-0662731 {
-            --icon-vertical-offset: 0px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0662731
-            .elementor-icon-list-item
-            > .elementor-icon-list-text,
-          .elementor-578
-            .elementor-element.elementor-element-0662731
-            .elementor-icon-list-item
-            > a {
-            font-family: var(--e-global-typography-accent-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-accent-font-size);
-            font-weight: var(--e-global-typography-accent-font-weight);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0662731
-            .elementor-icon-list-text {
-            color: var(--e-global-color-secondary);
-            transition: color 0.3s;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-53471df
-            > .elementor-element-populated {
-            margin: 0px 10px 0px 10px;
-            --e-column-margin-right: 10px;
-            --e-column-margin-left: 10px;
-          }
-          .elementor-578 .elementor-element.elementor-element-adc177f {
-            text-align: center;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-adc177f
-            .elementor-heading-title {
-            color: var(--e-global-color-secondary);
-            font-family: var(--e-global-typography-3f36f7f-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-3f36f7f-font-size);
-            font-weight: var(--e-global-typography-3f36f7f-font-weight);
-            line-height: var(--e-global-typography-3f36f7f-line-height);
-            letter-spacing: var(--e-global-typography-3f36f7f-letter-spacing);
-            word-spacing: var(--e-global-typography-3f36f7f-word-spacing);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-4569777
-            .elementor-icon-list-items:not(.elementor-inline-items)
-            .elementor-icon-list-item:not(:last-child) {
-            padding-bottom: calc(10px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-4569777
-            .elementor-icon-list-items:not(.elementor-inline-items)
-            .elementor-icon-list-item:not(:first-child) {
-            margin-top: calc(10px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-4569777
-            .elementor-icon-list-items.elementor-inline-items
-            .elementor-icon-list-item {
-            margin-right: calc(10px / 2);
-            margin-left: calc(10px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-4569777
-            .elementor-icon-list-items.elementor-inline-items {
-            margin-right: calc(-10px / 2);
-            margin-left: calc(-10px / 2);
-          }
-          body.rtl
-            .elementor-578
-            .elementor-element.elementor-element-4569777
-            .elementor-icon-list-items.elementor-inline-items
-            .elementor-icon-list-item:after {
-            left: calc(-10px / 2);
-          }
-          body:not(.rtl)
-            .elementor-578
-            .elementor-element.elementor-element-4569777
-            .elementor-icon-list-items.elementor-inline-items
-            .elementor-icon-list-item:after {
-            right: calc(-10px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-4569777
-            .elementor-icon-list-icon
-            i {
-            color: var(--e-global-color-accent);
-            transition: color 0.3s;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-4569777
-            .elementor-icon-list-icon
-            svg {
-            fill: var(--e-global-color-accent);
-            transition: fill 0.3s;
-          }
-          .elementor-578 .elementor-element.elementor-element-4569777 {
-            --icon-vertical-offset: 0px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-4569777
-            .elementor-icon-list-item
-            > .elementor-icon-list-text,
-          .elementor-578
-            .elementor-element.elementor-element-4569777
-            .elementor-icon-list-item
-            > a {
-            font-family: var(--e-global-typography-accent-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-accent-font-size);
-            font-weight: var(--e-global-typography-accent-font-weight);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-4569777
-            .elementor-icon-list-text {
-            color: var(--e-global-color-secondary);
-            transition: color 0.3s;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-51cb7b7
-            > .elementor-element-populated {
-            margin: 0px 10px 0px 10px;
-            --e-column-margin-right: 10px;
-            --e-column-margin-left: 10px;
-          }
-          .elementor-578 .elementor-element.elementor-element-5d14949 {
-            text-align: center;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-5d14949
-            .elementor-heading-title {
-            color: var(--e-global-color-secondary);
-            font-family: var(--e-global-typography-3f36f7f-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-3f36f7f-font-size);
-            font-weight: var(--e-global-typography-3f36f7f-font-weight);
-            line-height: var(--e-global-typography-3f36f7f-line-height);
-            letter-spacing: var(--e-global-typography-3f36f7f-letter-spacing);
-            word-spacing: var(--e-global-typography-3f36f7f-word-spacing);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-1b64402
-            .elementor-icon-list-items:not(.elementor-inline-items)
-            .elementor-icon-list-item:not(:last-child) {
-            padding-bottom: calc(10px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-1b64402
-            .elementor-icon-list-items:not(.elementor-inline-items)
-            .elementor-icon-list-item:not(:first-child) {
-            margin-top: calc(10px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-1b64402
-            .elementor-icon-list-items.elementor-inline-items
-            .elementor-icon-list-item {
-            margin-right: calc(10px / 2);
-            margin-left: calc(10px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-1b64402
-            .elementor-icon-list-items.elementor-inline-items {
-            margin-right: calc(-10px / 2);
-            margin-left: calc(-10px / 2);
-          }
-          body.rtl
-            .elementor-578
-            .elementor-element.elementor-element-1b64402
-            .elementor-icon-list-items.elementor-inline-items
-            .elementor-icon-list-item:after {
-            left: calc(-10px / 2);
-          }
-          body:not(.rtl)
-            .elementor-578
-            .elementor-element.elementor-element-1b64402
-            .elementor-icon-list-items.elementor-inline-items
-            .elementor-icon-list-item:after {
-            right: calc(-10px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-1b64402
-            .elementor-icon-list-icon
-            i {
-            color: var(--e-global-color-accent);
-            transition: color 0.3s;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-1b64402
-            .elementor-icon-list-icon
-            svg {
-            fill: var(--e-global-color-accent);
-            transition: fill 0.3s;
-          }
-          .elementor-578 .elementor-element.elementor-element-1b64402 {
-            --icon-vertical-offset: 0px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-1b64402
-            .elementor-icon-list-item
-            > .elementor-icon-list-text,
-          .elementor-578
-            .elementor-element.elementor-element-1b64402
-            .elementor-icon-list-item
-            > a {
-            font-family: var(--e-global-typography-accent-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-accent-font-size);
-            font-weight: var(--e-global-typography-accent-font-weight);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-1b64402
-            .elementor-icon-list-text {
-            color: var(--e-global-color-secondary);
-            transition: color 0.3s;
-          }
-          .elementor-bc-flex-widget
-            .elementor-578
-            .elementor-element.elementor-element-607be44.elementor-column
-            .elementor-widget-wrap {
-            align-items: flex-start;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-607be44.elementor-column.elementor-element[data-element_type="column"]
-            > .elementor-widget-wrap.elementor-element-populated {
-            align-content: flex-start;
-            align-items: flex-start;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-607be44
-            > .elementor-element-populated {
-            margin: 0px 10px 0px 10px;
-            --e-column-margin-right: 10px;
-            --e-column-margin-left: 10px;
-          }
-          .elementor-578 .elementor-element.elementor-element-6f88222 {
-            text-align: center;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-6f88222
-            .elementor-heading-title {
-            color: var(--e-global-color-secondary);
-            font-family: var(--e-global-typography-3f36f7f-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-3f36f7f-font-size);
-            font-weight: var(--e-global-typography-3f36f7f-font-weight);
-            line-height: var(--e-global-typography-3f36f7f-line-height);
-            letter-spacing: var(--e-global-typography-3f36f7f-letter-spacing);
-            word-spacing: var(--e-global-typography-3f36f7f-word-spacing);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0016cc1
-            .jeg-elementor-kit.jkit-mailchimp
-            .jkit-form-control {
-            font-family: var(--e-global-typography-accent-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-accent-font-size);
-            font-weight: var(--e-global-typography-accent-font-weight);
-            color: var(--e-global-color-text);
-            border-radius: 7px 7px 7px 7px;
-            padding: 15px 18px 15px 18px;
-            border-style: solid;
-            border-width: 0px 0px 0px 0px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0016cc1
-            .jeg-elementor-kit.jkit-mailchimp.style-inline
-            .jkit-input-wrapper:not(.jkit-submit-input-holder) {
-            margin-right: 10px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0016cc1
-            .jeg-elementor-kit.jkit-mailchimp
-            .jkit-form-control::placeholder {
-            font-family: var(--e-global-typography-accent-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-accent-font-size);
-            font-weight: var(--e-global-typography-accent-font-weight);
-            color: #b5b5b5;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0016cc1
-            .jeg-elementor-kit.jkit-mailchimp.style-inline
-            .jkit-submit-input-holder {
-            align-self: center;
-            -webkit-box-flex: 57px;
-            -ms-flex: 0 0 57px;
-            flex: 0 0 57px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0016cc1
-            .jeg-elementor-kit.jkit-mailchimp
-            .jkit-mailchimp-submit {
-            border-radius: 7px 7px 7px 7px;
-            padding: 13px 0px 13px 8px;
-            color: var(--e-global-color-primary);
-            background-color: var(--e-global-color-accent);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0016cc1
-            .jeg-elementor-kit.jkit-mailchimp.style-full
-            .jkit-mailchimp-submit {
-            width: 57px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0016cc1
-            .jeg-elementor-kit.jkit-mailchimp
-            .jkit-mailchimp-submit
-            svg {
-            fill: var(--e-global-color-primary);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0016cc1
-            .jeg-elementor-kit.jkit-mailchimp
-            .jkit-mailchimp-submit:hover {
-            background-color: #e4a510;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-0016cc1
-            > .elementor-widget-container {
-            margin: 0px 0px 0px 010px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-4196c85
-            > .elementor-container {
-            max-width: 1220px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-4196c85
-            > .elementor-container
-            > .elementor-column
-            > .elementor-widget-wrap {
-            align-content: center;
-            align-items: center;
-          }
-          .elementor-578 .elementor-element.elementor-element-4196c85 {
-            border-style: solid;
-            border-width: 1px 0px 0px 0px;
-            border-color: #ffffff17;
-            transition: background 0.3s, border 0.3s, border-radius 0.3s,
-              box-shadow 0.3s;
-            padding: 40px 0px 0px 0px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-4196c85
-            > .elementor-background-overlay {
-            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-          }
-          .elementor-578 .elementor-element.elementor-element-14a46d6 {
-            text-align: left;
-            color: var(--e-global-color-secondary);
-            font-family: var(--e-global-typography-accent-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-accent-font-size);
-            font-weight: var(--e-global-typography-accent-font-weight);
-          }
-          .elementor-578 .elementor-element.elementor-element-a58bc2b {
-            text-align: center;
-          }
-          .elementor-578 .elementor-element.elementor-element-a58bc2b img {
-            width: 160px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-ca2b7fb
-            .elementor-icon-list-items:not(.elementor-inline-items)
-            .elementor-icon-list-item:not(:last-child) {
-            padding-bottom: calc(40px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-ca2b7fb
-            .elementor-icon-list-items:not(.elementor-inline-items)
-            .elementor-icon-list-item:not(:first-child) {
-            margin-top: calc(40px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-ca2b7fb
-            .elementor-icon-list-items.elementor-inline-items
-            .elementor-icon-list-item {
-            margin-right: calc(40px / 2);
-            margin-left: calc(40px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-ca2b7fb
-            .elementor-icon-list-items.elementor-inline-items {
-            margin-right: calc(-40px / 2);
-            margin-left: calc(-40px / 2);
-          }
-          body.rtl
-            .elementor-578
-            .elementor-element.elementor-element-ca2b7fb
-            .elementor-icon-list-items.elementor-inline-items
-            .elementor-icon-list-item:after {
-            left: calc(-40px / 2);
-          }
-          body:not(.rtl)
-            .elementor-578
-            .elementor-element.elementor-element-ca2b7fb
-            .elementor-icon-list-items.elementor-inline-items
-            .elementor-icon-list-item:after {
-            right: calc(-40px / 2);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-ca2b7fb
-            .elementor-icon-list-icon
-            i {
-            transition: color 0.3s;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-ca2b7fb
-            .elementor-icon-list-icon
-            svg {
-            transition: fill 0.3s;
-          }
-          .elementor-578 .elementor-element.elementor-element-ca2b7fb {
-            --e-icon-list-icon-size: 14px;
-            --icon-vertical-offset: 0px;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-ca2b7fb
-            .elementor-icon-list-item
-            > .elementor-icon-list-text,
-          .elementor-578
-            .elementor-element.elementor-element-ca2b7fb
-            .elementor-icon-list-item
-            > a {
-            font-family: var(--e-global-typography-accent-font-family),
-              Sans-serif;
-            font-size: var(--e-global-typography-accent-font-size);
-            font-weight: var(--e-global-typography-accent-font-weight);
-          }
-          .elementor-578
-            .elementor-element.elementor-element-ca2b7fb
-            .elementor-icon-list-text {
-            color: var(--e-global-color-secondary);
-            transition: color 0.3s;
-          }
-          .elementor-578
-            .elementor-element.elementor-element-ca2b7fb
-            .elementor-icon-list-item:hover
-            .elementor-icon-list-text {
-            color: #cecece;
-          }
-          @media (min-width: 768px) {
-            .elementor-578 .elementor-element.elementor-element-e699454 {
-              width: 25%;
-            }
-            .elementor-578 .elementor-element.elementor-element-eaef023 {
-              width: 49.332%;
-            }
-            .elementor-578 .elementor-element.elementor-element-b289d9f {
-              width: 25%;
-            }
-          }
-          @media (max-width: 1024px) {
-            .elementor-578
-              .elementor-element.elementor-element-328c9c9
-              > .elementor-background-overlay {
-              background-position: 0px 0px;
-            }
-            .elementor-578 .elementor-element.elementor-element-328c9c9 {
-              padding: 80px 10px 80px 10px;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-18d0fe8
-              .elementor-heading-title {
-              font-size: var(--e-global-typography-3575ebf-font-size);
-              line-height: var(--e-global-typography-3575ebf-line-height);
-              letter-spacing: var(--e-global-typography-3575ebf-letter-spacing);
-              word-spacing: var(--e-global-typography-3575ebf-word-spacing);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-2029499
-              .jeg-elementor-kit.jkit-heading
-              .heading-title {
-              font-size: var(--e-global-typography-secondary-font-size);
-              line-height: var(--e-global-typography-secondary-line-height);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-2029499
-              .jeg-elementor-kit.jkit-heading
-              .heading-title
-              > span {
-              font-size: var(--e-global-typography-secondary-font-size);
-              line-height: var(--e-global-typography-secondary-line-height);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-2029499
-              > .elementor-widget-container {
-              padding: 0px 0px 0px 0px;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-feedee8
-              .elementor-icon-box-title,
-            .elementor-578
-              .elementor-element.elementor-element-feedee8
-              .elementor-icon-box-title
-              a {
-              font-size: var(--e-global-typography-c68815b-font-size);
-              line-height: var(--e-global-typography-c68815b-line-height);
-              letter-spacing: var(--e-global-typography-c68815b-letter-spacing);
-              word-spacing: var(--e-global-typography-c68815b-word-spacing);
-            }
-            .elementor-578 .elementor-element.elementor-element-a5b5444 {
-              padding: 80px 20px 20px 20px;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-fa85f34
-              > .elementor-element-populated {
-              padding: 0px 0px 0px 0px;
-            }
-            .elementor-578 .elementor-element.elementor-element-a33669f {
-              margin-top: 0px;
-              margin-bottom: 100px;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-a9419e5
-              .elementor-heading-title {
-              font-size: var(--e-global-typography-3f36f7f-font-size);
-              line-height: var(--e-global-typography-3f36f7f-line-height);
-              letter-spacing: var(--e-global-typography-3f36f7f-letter-spacing);
-              word-spacing: var(--e-global-typography-3f36f7f-word-spacing);
-            }
-            .elementor-578 .elementor-element.elementor-element-0662731 {
-              --e-icon-list-icon-align: right;
-              --e-icon-list-icon-margin: 0 0 0
-                calc(var(--e-icon-list-icon-size, 1em) * 0.25);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-0662731
-              .elementor-icon-list-item
-              > .elementor-icon-list-text,
-            .elementor-578
-              .elementor-element.elementor-element-0662731
-              .elementor-icon-list-item
-              > a {
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-adc177f
-              .elementor-heading-title {
-              font-size: var(--e-global-typography-3f36f7f-font-size);
-              line-height: var(--e-global-typography-3f36f7f-line-height);
-              letter-spacing: var(--e-global-typography-3f36f7f-letter-spacing);
-              word-spacing: var(--e-global-typography-3f36f7f-word-spacing);
-            }
-            .elementor-578 .elementor-element.elementor-element-4569777 {
-              --e-icon-list-icon-align: right;
-              --e-icon-list-icon-margin: 0 0 0
-                calc(var(--e-icon-list-icon-size, 1em) * 0.25);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-4569777
-              .elementor-icon-list-item
-              > .elementor-icon-list-text,
-            .elementor-578
-              .elementor-element.elementor-element-4569777
-              .elementor-icon-list-item
-              > a {
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-51cb7b7
-              > .elementor-element-populated {
-              margin: 50px 0px 0px 0px;
-              --e-column-margin-right: 0px;
-              --e-column-margin-left: 0px;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-5d14949
-              .elementor-heading-title {
-              font-size: var(--e-global-typography-3f36f7f-font-size);
-              line-height: var(--e-global-typography-3f36f7f-line-height);
-              letter-spacing: var(--e-global-typography-3f36f7f-letter-spacing);
-              word-spacing: var(--e-global-typography-3f36f7f-word-spacing);
-            }
-            .elementor-578 .elementor-element.elementor-element-1b64402 {
-              --e-icon-list-icon-align: right;
-              --e-icon-list-icon-margin: 0 0 0
-                calc(var(--e-icon-list-icon-size, 1em) * 0.25);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-1b64402
-              .elementor-icon-list-item
-              > .elementor-icon-list-text,
-            .elementor-578
-              .elementor-element.elementor-element-1b64402
-              .elementor-icon-list-item
-              > a {
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-            .elementor-bc-flex-widget
-              .elementor-578
-              .elementor-element.elementor-element-607be44.elementor-column
-              .elementor-widget-wrap {
-              align-items: flex-end;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-607be44.elementor-column.elementor-element[data-element_type="column"]
-              > .elementor-widget-wrap.elementor-element-populated {
-              align-content: flex-end;
-              align-items: flex-end;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-6f88222
-              .elementor-heading-title {
-              font-size: var(--e-global-typography-3f36f7f-font-size);
-              line-height: var(--e-global-typography-3f36f7f-line-height);
-              letter-spacing: var(--e-global-typography-3f36f7f-letter-spacing);
-              word-spacing: var(--e-global-typography-3f36f7f-word-spacing);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-0016cc1
-              .jeg-elementor-kit.jkit-mailchimp
-              .jkit-form-control {
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-0016cc1
-              .jeg-elementor-kit.jkit-mailchimp
-              .jkit-form-control::placeholder {
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-0016cc1
-              > .elementor-widget-container {
-              margin: 0px 0px 0px 30px;
-            }
-            .elementor-578 .elementor-element.elementor-element-4196c85 {
-              padding: 30px 0px 0px 0px;
-            }
-            .elementor-578 .elementor-element.elementor-element-14a46d6 {
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-            .elementor-578 .elementor-element.elementor-element-a58bc2b {
-              text-align: center;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-a58bc2b
-              > .elementor-widget-container {
-              padding: 0px 0px 0px 0px;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-ca2b7fb
-              .elementor-icon-list-item
-              > .elementor-icon-list-text,
-            .elementor-578
-              .elementor-element.elementor-element-ca2b7fb
-              .elementor-icon-list-item
-              > a {
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-          }
-          @media (max-width: 767px) {
-            .elementor-578
-              .elementor-element.elementor-element-328c9c9
-              > .elementor-background-overlay {
-              background-position: 0px 0px;
-            }
-            .elementor-578 .elementor-element.elementor-element-328c9c9 {
-              padding: 50px 5px 50px 5px;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-18d0fe8
-              .elementor-heading-title {
-              font-size: var(--e-global-typography-3575ebf-font-size);
-              line-height: var(--e-global-typography-3575ebf-line-height);
-              letter-spacing: var(--e-global-typography-3575ebf-letter-spacing);
-              word-spacing: var(--e-global-typography-3575ebf-word-spacing);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-2029499
-              .jeg-elementor-kit.jkit-heading
-              .heading-title {
-              font-size: var(--e-global-typography-secondary-font-size);
-              line-height: var(--e-global-typography-secondary-line-height);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-2029499
-              .jeg-elementor-kit.jkit-heading
-              .heading-title
-              > span {
-              font-size: var(--e-global-typography-secondary-font-size);
-              line-height: var(--e-global-typography-secondary-line-height);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-feedee8
-              .elementor-icon-box-wrapper {
-              text-align: center;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-feedee8
-              .elementor-icon-box-title,
-            .elementor-578
-              .elementor-element.elementor-element-feedee8
-              .elementor-icon-box-title
-              a {
-              font-size: var(--e-global-typography-c68815b-font-size);
-              line-height: var(--e-global-typography-c68815b-line-height);
-              letter-spacing: var(--e-global-typography-c68815b-letter-spacing);
-              word-spacing: var(--e-global-typography-c68815b-word-spacing);
-            }
-            .elementor-578 .elementor-element.elementor-element-a5b5444 {
-              padding: 50px 15px 15px 15px;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-22be06f
-              > .elementor-element-populated {
-              margin: 0px 0px 0px 0px;
-              --e-column-margin-right: 0px;
-              --e-column-margin-left: 0px;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-a9419e5
-              .elementor-heading-title {
-              font-size: var(--e-global-typography-3f36f7f-font-size);
-              line-height: var(--e-global-typography-3f36f7f-line-height);
-              letter-spacing: var(--e-global-typography-3f36f7f-letter-spacing);
-              word-spacing: var(--e-global-typography-3f36f7f-word-spacing);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-0662731
-              .elementor-icon-list-item
-              > .elementor-icon-list-text,
-            .elementor-578
-              .elementor-element.elementor-element-0662731
-              .elementor-icon-list-item
-              > a {
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-53471df
-              > .elementor-element-populated {
-              margin: 40px 0px 0px 0px;
-              --e-column-margin-right: 0px;
-              --e-column-margin-left: 0px;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-adc177f
-              .elementor-heading-title {
-              font-size: var(--e-global-typography-3f36f7f-font-size);
-              line-height: var(--e-global-typography-3f36f7f-line-height);
-              letter-spacing: var(--e-global-typography-3f36f7f-letter-spacing);
-              word-spacing: var(--e-global-typography-3f36f7f-word-spacing);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-4569777
-              .elementor-icon-list-item
-              > .elementor-icon-list-text,
-            .elementor-578
-              .elementor-element.elementor-element-4569777
-              .elementor-icon-list-item
-              > a {
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-51cb7b7
-              > .elementor-element-populated {
-              margin: 40px 0px 0px 0px;
-              --e-column-margin-right: 0px;
-              --e-column-margin-left: 0px;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-5d14949
-              .elementor-heading-title {
-              font-size: var(--e-global-typography-3f36f7f-font-size);
-              line-height: var(--e-global-typography-3f36f7f-line-height);
-              letter-spacing: var(--e-global-typography-3f36f7f-letter-spacing);
-              word-spacing: var(--e-global-typography-3f36f7f-word-spacing);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-1b64402
-              .elementor-icon-list-item
-              > .elementor-icon-list-text,
-            .elementor-578
-              .elementor-element.elementor-element-1b64402
-              .elementor-icon-list-item
-              > a {
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-607be44
-              > .elementor-element-populated {
-              margin: 40px 0px 0px 0px;
-              --e-column-margin-right: 0px;
-              --e-column-margin-left: 0px;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-6f88222
-              .elementor-heading-title {
-              font-size: var(--e-global-typography-3f36f7f-font-size);
-              line-height: var(--e-global-typography-3f36f7f-line-height);
-              letter-spacing: var(--e-global-typography-3f36f7f-letter-spacing);
-              word-spacing: var(--e-global-typography-3f36f7f-word-spacing);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-0016cc1
-              .jeg-elementor-kit.jkit-mailchimp
-              .jkit-form-control {
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-0016cc1
-              .jeg-elementor-kit.jkit-mailchimp
-              .jkit-form-control::placeholder {
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-0016cc1
-              .jeg-elementor-kit.jkit-mailchimp
-              .jkit-mailchimp-submit {
-              padding: 14px 0px 9px 8px;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-0016cc1
-              > .elementor-widget-container {
-              margin: 0px 0px 0px 0px;
-            }
-            .elementor-578 .elementor-element.elementor-element-14a46d6 {
-              text-align: center;
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-eaef023
-              > .elementor-element-populated {
-              margin: 20px 0px 20px 0px;
-              --e-column-margin-right: 0px;
-              --e-column-margin-left: 0px;
-            }
-            .elementor-578 .elementor-element.elementor-element-a58bc2b {
-              text-align: center;
-            }
-            .elementor-578
-              .elementor-element.elementor-element-ca2b7fb
-              .elementor-icon-list-items:not(.elementor-inline-items)
-              .elementor-icon-list-item:not(:last-child) {
-              padding-bottom: calc(24px / 2);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-ca2b7fb
-              .elementor-icon-list-items:not(.elementor-inline-items)
-              .elementor-icon-list-item:not(:first-child) {
-              margin-top: calc(24px / 2);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-ca2b7fb
-              .elementor-icon-list-items.elementor-inline-items
-              .elementor-icon-list-item {
-              margin-right: calc(24px / 2);
-              margin-left: calc(24px / 2);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-ca2b7fb
-              .elementor-icon-list-items.elementor-inline-items {
-              margin-right: calc(-24px / 2);
-              margin-left: calc(-24px / 2);
-            }
-            body.rtl
-              .elementor-578
-              .elementor-element.elementor-element-ca2b7fb
-              .elementor-icon-list-items.elementor-inline-items
-              .elementor-icon-list-item:after {
-              left: calc(-24px / 2);
-            }
-            body:not(.rtl)
-              .elementor-578
-              .elementor-element.elementor-element-ca2b7fb
-              .elementor-icon-list-items.elementor-inline-items
-              .elementor-icon-list-item:after {
-              right: calc(-24px / 2);
-            }
-            .elementor-578
-              .elementor-element.elementor-element-ca2b7fb
-              .elementor-icon-list-item
-              > .elementor-icon-list-text,
-            .elementor-578
-              .elementor-element.elementor-element-ca2b7fb
-              .elementor-icon-list-item
-              > a {
-              font-size: var(--e-global-typography-accent-font-size);
-            }
-          }
-          @media (max-width: 1024px) and (min-width: 768px) {
-            .elementor-578 .elementor-element.elementor-element-22be06f {
-              width: 50%;
-            }
-            .elementor-578 .elementor-element.elementor-element-53471df {
-              width: 50%;
-            }
-            .elementor-578 .elementor-element.elementor-element-51cb7b7 {
-              width: 50%;
-            }
-            .elementor-578 .elementor-element.elementor-element-607be44 {
-              width: 50%;
-            }
-            .elementor-578 .elementor-element.elementor-element-e699454 {
-              width: 31%;
-            }
-            .elementor-578 .elementor-element.elementor-element-eaef023 {
-              width: 38%;
-            }
-            .elementor-578 .elementor-element.elementor-element-b289d9f {
-              width: 31%;
-            }
-          }
-          @media (max-width: 767px) {
-            .elementor-element.elementor-element-0016cc1
-              .jeg-elementor-kit.jkit-mailchimp.style-inline
-              .jkit-form-wrapper.extra-fields
-              .jkit-submit-input-holder {
-              -webkit-box-flex: 0;
-              -ms-flex: 0 0 100%;
-              flex: 0 0 100%;
-              max-width: 100%;
-            }
-          }
-          @media (max-width: 767px) {
-            .elementor-element.elementor-element-0016cc1
-              .jeg-elementor-kit.jkit-mailchimp.jeg-elementor-kit.jkit-mailchimp.style-inline
-              .jkit-form-wrapper.extra-fields
-              .jkit-input-wrapper:nth-last-child(2) {
-              margin-right: 0 !important;
-            }
-          }
-        </style>
-        <div
-          data-elementor-type="page"
-          data-elementor-id="578"
-          class="elementor elementor-578">
-          <section
-            class="elementor-section elementor-top-section elementor-element elementor-element-328c9c9 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-            data-id="328c9c9"
-            data-element_type="section"
-            data-settings='{"background_background":"classic"}'>
-            <div class="elementor-background-overlay"></div>
-            <div class="elementor-container elementor-column-gap-default">
-              <div
-                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6d797b3"
-                data-id="6d797b3"
-                data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                  <div
-                    class="elementor-element elementor-element-18d0fe8 elementor-widget elementor-widget-heading"
-                    data-id="18d0fe8"
-                    data-element_type="widget"
-                    data-widget_type="heading.default">
-                    <div class="elementor-widget-container">
-                      <h2
-                        class="elementor-heading-title elementor-size-default">
-                        Call 24 Hour Service Available
-                      </h2>
-                    </div>
-                  </div>
-                  <div
-                    class="elementor-element elementor-element-2029499 elementor-widget elementor-widget-jkit_heading"
-                    data-id="2029499"
-                    data-element_type="widget"
-                    data-widget_type="jkit_heading.default">
-                    <div class="elementor-widget-container">
-                      <div
-                        class="jeg-elementor-kit jkit-heading align-center align-tablet- align-mobile- jeg_module_100_39_687094a276da3">
-                        <div class="heading-section-title display-inline-block">
-                          <h2 class="heading-title">
-                            Call Now &amp; Book Your Taxi For Your Next
-                            Ride<span class="style-color"><span>.</span></span>
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="elementor-element elementor-element-feedee8 elementor-view-stacked elementor-shape-square elementor-position-left elementor-vertical-align-middle elementor-widget__width-auto elementor-mobile-position-top elementor-widget elementor-widget-icon-box"
-                    data-id="feedee8"
-                    data-element_type="widget"
-                    data-widget_type="icon-box.default">
-                    <div class="elementor-widget-container">
-                      <div class="elementor-icon-box-wrapper">
-                        <div class="elementor-icon-box-icon">
-                          <span class="elementor-icon elementor-animation-">
-                            <i aria-hidden="true" class="fas fa-phone-alt"></i>
-                          </span>
-                        </div>
-                        <div class="elementor-icon-box-content">
-                          <h3 class="elementor-icon-box-title">
-                            <span> (021) 111 444 90 </span>
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+      <footer class="bg-gray-900 text-white pt-12 pb-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Contact Information -->
+            <div class="mb-6">
+              <h3 class="text-xl font-bold mb-4 text-yellow-500">Contact Us</h3>
+              <div class="space-y-3">
+                <p class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-yellow-400 mr-2 mt-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <span
+                    >+91 9675202800<br />+91 75006
+                    60551</span
+                  >
+                </p>
+                <p class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-yellow-500 mr-2 mt-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <span>rahuldosad62@gmail.com</span>
+                </p>
+                <p class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-yellow-400 mr-2 mt-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span
+                    >House No 220, Naya Bazar<br />Tallital, Nainital,
+                    Uttarakhand</span
+                  >
+                </p>
               </div>
             </div>
-          </section>
-          <section
-            class="elementor-section elementor-top-section elementor-element elementor-element-a5b5444 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-            data-id="a5b5444"
-            data-element_type="section"
-            data-settings='{"background_background":"classic"}'>
-            <div class="elementor-background-overlay"></div>
-            <div class="elementor-container elementor-column-gap-default">
-              <div
-                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fa85f34"
-                data-id="fa85f34"
-                data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                  <section
-                    class="elementor-section elementor-inner-section elementor-element elementor-element-a33669f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="a33669f"
-                    data-element_type="section">
-                    <div class="elementor-container elementor-column-gap-no">
-                      <div
-                        class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-22be06f"
-                        data-id="22be06f"
-                        data-element_type="column">
-                        <div
-                          class="elementor-widget-wrap elementor-element-populated">
-                          <div
-                            class="elementor-element elementor-element-a9419e5 elementor-widget elementor-widget-heading"
-                            data-id="a9419e5"
-                            data-element_type="widget"
-                            data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                              <h2
-                                class="elementor-heading-title elementor-size-default">
-                                Address
-                              </h2>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-0662731 elementor-align-center elementor-tablet-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                            data-id="0662731"
-                            data-element_type="widget"
-                            data-widget_type="icon-list.default">
-                            <div class="elementor-widget-container">
-                              <ul class="elementor-icon-list-items">
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >House No 220, Naya Bazar
-                                  </span>
-                                </li>
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >Tallital, Nainital, Uttarakhand</span
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-53471df"
-                        data-id="53471df"
-                        data-element_type="column">
-                        <div
-                          class="elementor-widget-wrap elementor-element-populated">
-                          <div
-                            class="elementor-element elementor-element-adc177f elementor-widget elementor-widget-heading"
-                            data-id="adc177f"
-                            data-element_type="widget"
-                            data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                              <h2
-                                class="elementor-heading-title elementor-size-default">
-                                Contact
-                              </h2>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-4569777 elementor-align-center elementor-tablet-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                            data-id="4569777"
-                            data-element_type="widget"
-                            data-widget_type="icon-list.default">
-                            <div class="elementor-widget-container">
-                              <ul class="elementor-icon-list-items">
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >rahuldosad62@gmail.com</span
-                                  >
-                                </li>
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >+91 9675202800</span
-                                  >
-                                </li>
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >+91 75006 60551</span
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-51cb7b7"
-                        data-id="51cb7b7"
-                        data-element_type="column">
-                        <div
-                          class="elementor-widget-wrap elementor-element-populated">
-                          <div
-                            class="elementor-element elementor-element-5d14949 elementor-widget elementor-widget-heading"
-                            data-id="5d14949"
-                            data-element_type="widget"
-                            data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                              <h2
-                                class="elementor-heading-title elementor-size-default">
-                                Service Hours
-                              </h2>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-1b64402 elementor-align-center elementor-tablet-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                            data-id="1b64402"
-                            data-element_type="widget"
-                            data-widget_type="icon-list.default">
-                            <div class="elementor-widget-container">
-                              <ul class="elementor-icon-list-items">
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >Available 24/7</span
-                                  >
-                                </li>
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >Emergency Bookings Welcome</span
-                                  >
-                                </li>
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >WhatsApp: +91 9675202800</span
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-607be44"
-                        data-id="607be44"
-                        data-element_type="column">
-                        <div
-                          class="elementor-widget-wrap elementor-element-populated">
-                          <div
-                            class="elementor-element elementor-element-6f88222 elementor-widget elementor-widget-heading"
-                            data-id="6f88222"
-                            data-element_type="widget"
-                            data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                              <h2
-                                class="elementor-heading-title elementor-size-default">
-                                Our Fleet
-                              </h2>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-element elementor-element-0016cc1 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                            data-id="0016cc1"
-                            data-element_type="widget"
-                            data-widget_type="icon-list.default">
-                            <div class="elementor-widget-container">
-                              <ul class="elementor-icon-list-items">
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >• Innova (7 seater)</span
-                                  >
-                                </li>
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >• Tavera (8 & 9 seater)</span
-                                  >
-                                </li>
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >• Ertiga (6 seater)</span
-                                  >
-                                </li>
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >• Traveler (13 & 17 seater)</span
-                                  >
-                                </li>
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >• Bus (28 seater)</span
-                                  >
-                                </li>
-                                <li class="elementor-icon-list-item">
-                                  <span class="elementor-icon-list-text"
-                                    >• Alto & Wagon R (4 seater)</span
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  <section
-                    class="elementor-section elementor-inner-section elementor-element elementor-element-4196c85 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="4196c85"
-                    data-element_type="section">
-                    <div class="flex justify-between">
-                      <div
-                        class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-e699454"
-                        data-id="e699454"
-                        data-element_type="column">
-                        <div
-                          class="elementor-widget-wrap elementor-element-populated">
-                          <div
-                            class="elementor-element elementor-element-14a46d6 elementor-widget elementor-widget-text-editor"
-                            data-id="14a46d6"
-                            data-element_type="widget"
-                            data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
-                              © 2024 Dadi's Tour and Travel - Rahul Dosad
-                            </div>
-                          </div>
-                        </div>
-                      </div>
 
-                      <div
-                        class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b289d9f"
-                        data-id="b289d9f"
-                        data-element_type="column">
-                        <div
-                          class="elementor-widget-wrap elementor-element-populated">
-                          <div
-                            class="elementor-element elementor-element-ca2b7fb elementor-icon-list--layout-inline elementor-align-right elementor-tablet-align-right elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                            data-id="ca2b7fb"
-                            data-element_type="widget"
-                            data-widget_type="icon-list.default">
-                            <div class="elementor-widget-container">
-                              <ul
-                                class="elementor-icon-list-items elementor-inline-items">
-                                <li
-                                  class="elementor-icon-list-item elementor-inline-item">
-                                  <a
-                                    href="https://www.instagram.com/dadis_tour_and_travels?igsh=dWk3a3dkZ29tMHF3"
-                                    target="_blank">
-                                    <span class="elementor-icon-list-text"
-                                      >Instagram</span
-                                    >
-                                  </a>
-                                </li>
-                                <li
-                                  class="elementor-icon-list-item elementor-inline-item">
-                                  <a
-                                    href="https://wa.me/919675202800"
-                                    target="_blank">
-                                    <span class="elementor-icon-list-text"
-                                      >WhatsApp</span
-                                    >
-                                  </a>
-                                </li>
-                                <li
-                                  class="elementor-icon-list-item elementor-inline-item">
-                                  <a href="tel:+919675202800">
-                                    <span class="elementor-icon-list-text"
-                                      >Call Us</span
-                                    >
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                </div>
+            <!-- Service Hours -->
+            <div class="mb-6">
+              <h3 class="text-xl font-bold mb-4 text-yellow-500">
+                Service Hours
+              </h3>
+              <div class="space-y-3">
+                <p class="flex items-center">
+                  <svg
+                    class="h-5 w-5 text-yellow-400 mr-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Available 24/7
+                </p>
+                <p class="flex items-center">
+                  <svg
+                    class="h-5 w-5 text-yellow-400 mr-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                  Emergency Bookings Welcome
+                </p>
+                <p class="flex items-center">
+                  <svg
+                    class="h-5 w-5 text-yellow-400 mr-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                  </svg>
+                  WhatsApp: +91 9675202800
+                </p>
               </div>
             </div>
-          </section>
+
+            <!-- Our Fleet -->
+            <div class="mb-6">
+              <h3 class="text-xl font-bold mb-4 text-yellow-500">Our Fleet</h3>
+              <ul class="grid grid-cols-2 gap-2">
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-yellow-400 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7" />
+                  </svg>
+                  Innova (7 seater)
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-yellow-400 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7" />
+                  </svg>
+                  Tavera (8 & 9 seater)
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-yellow-400 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7" />
+                  </svg>
+                  Ertiga (6 seater)
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-yellow-400 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7" />
+                  </svg>
+                  Traveler (13 & 17 seater)
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-yellow-400 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7" />
+                  </svg>
+                  Bus (28 seater)
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="h-4 w-4 text-yellow-400 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7" />
+                  </svg>
+                  Alto & Wagon R (4 seater)
+                </li>
+              </ul>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="mb-6">
+              <h3 class="text-xl font-bold mb-4 text-yellow-500">
+                24 Hour Service
+              </h3>
+              <p class="mb-6 text-gray-300">
+                Call Now & Book Your Taxi For Your Next Ride.
+              </p>
+              <a
+                href="tel:+919675202800"
+                class="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                Call Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Social and Copyright -->
+          <div
+            class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+              <p class="text-gray-400">
+                © 2024 Dadi's Tour and Travel - Rahul Dosad. All rights
+                reserved.
+              </p>
+            </div>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-yellow-400 transition duration-300">
+                <span class="sr-only">WhatsApp</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-6.29-12.21c-5.297 0-9.588 4.308-9.588 9.61 0 5.303 4.291 9.611 9.588 9.611 5.296 0 9.587-4.308 9.587-9.61 0-5.303-4.291-9.611-9.587-9.611zm0 16.728c-3.917 0-7.09-3.16-7.09-7.118 0-3.958 3.174-7.117 7.09-7.117 3.916 0 7.09 3.159 7.09 7.117 0 3.959-3.174 7.118-7.09 7.118z" />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-yellow-400 transition duration-300">
+                <span class="sr-only">Instagram</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+              <a
+                href="tel:+919675202800"
+                class="text-gray-400 hover:text-yellow-400 transition duration-300">
+                <span class="sr-only">Call Us</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
@@ -6799,32 +5392,35 @@
 
     <script>
       // Mobile menu functionality
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const mobileMenuClose = document.getElementById('mobile-menu-close');
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileMenuClose = document.getElementById("mobile-menu-close");
 
       function toggleMobileMenu() {
-        mobileMenu.classList.toggle('active');
-        mobileMenuBtn.classList.toggle('active');
+        mobileMenu.classList.toggle("active");
+        mobileMenuBtn.classList.toggle("active");
       }
 
-      mobileMenuBtn.addEventListener('click', toggleMobileMenu);
-      mobileMenuClose.addEventListener('click', toggleMobileMenu);
+      mobileMenuBtn.addEventListener("click", toggleMobileMenu);
+      mobileMenuClose.addEventListener("click", toggleMobileMenu);
 
       // Close mobile menu when clicking on menu items
-      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-      mobileMenuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.remove('active');
-          mobileMenuBtn.classList.remove('active');
+      const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
+          mobileMenuBtn.classList.remove("active");
         });
       });
 
       // Close mobile menu when clicking outside
-      document.addEventListener('click', (e) => {
-        if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-          mobileMenu.classList.remove('active');
-          mobileMenuBtn.classList.remove('active');
+      document.addEventListener("click", (e) => {
+        if (
+          !mobileMenu.contains(e.target) &&
+          !mobileMenuBtn.contains(e.target)
+        ) {
+          mobileMenu.classList.remove("active");
+          mobileMenuBtn.classList.remove("active");
         }
       });
     </script>
